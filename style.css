@@ -1,0 +1,41 @@
+body{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+.choices{
+    margin-bottom: 1em;
+}
+
+.choices button{
+    font-size: 6rem;
+    border-radius: 60%;
+    background-color: hsl(200, 100%, 60%);
+    border: none;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#playerDisplay, #computerDisplay{
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+}
+
+#resultDisplay{
+    font-size: 2rem;
+}
+
+.greenText{
+    color: hsl(120, 100%, 30%);
+}
+
+.redText{
+    color: hsl(0, 100%, 60%);
+}
