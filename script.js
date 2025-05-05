@@ -2,6 +2,11 @@ let playerDisplay = document.getElementById("playerDisplay")
 let computerDisplay = document.getElementById("computerDisplay")
 let resultDisplay = document.getElementById("resultDisplay")
 let choices = ["rock", "paper", "scissors"]
+let playerScoreDisplay = document.getElementById("playerScoreDisplay")
+let computerScoreDisplay = document.getElementById("computerScoreDisplay")
+
+let playerScore = 0
+let computerScore = 0
 
 function playGame(playerChoice){
     
@@ -39,11 +44,18 @@ function playGame(playerChoice){
     switch(result){
         case "YOU WIN":
         resultDisplay.classList.add("greenText")
-        break 
+        playerScore++
+        playerScoreDisplay.textContent = playerScore
+        break
+        
+        
         
         case "YOU LOSE":
         resultDisplay.classList.add("redText") 
-        break   
+        computerScore++
+        computerScoreDisplay.textContent = computerScore
+        break  
+         
     }
 }
 
